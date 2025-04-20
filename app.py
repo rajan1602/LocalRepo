@@ -7,8 +7,8 @@ import threading
 import datetime
 
 # Telegram Bot credentials
-BOT_TOKEN = '7978328252:AAHviGrFM1MWMDmfLWhqsk9D64XtbyJMsWk'
-CHAT_ID = '5738184404'
+BOT_TOKEN = st.secrets["telegram"]["BOT_TOKEN"]
+CHAT_ID = st.secrets["telegram"]["CHAT_ID"]
 
 def send_telegram_message(message):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
